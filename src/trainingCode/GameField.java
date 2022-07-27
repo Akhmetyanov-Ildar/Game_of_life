@@ -15,9 +15,12 @@ public class GameField {
                 Random random = new Random();
                 boolean isCellAlive = random.nextBoolean();
                 gameScreen[i][j] = new Cell(i, j, isCellAlive);
-
             }
         }
+    }
+
+    void simulateNextStep() {
+
     }
 
     void print() {
@@ -32,5 +35,8 @@ public class GameField {
             System.out.println();
 
         }
+        System.out.println("_________________________________________________________");
+        System.out.println("_________________________________________________________");
+        System.out.println("_________________________________________________________");
     }
 }

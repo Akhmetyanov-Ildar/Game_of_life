@@ -2,9 +2,15 @@ package trainingCode;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         GameField g = new GameField();
-        g.print();
+
+        while (true) {
+            g.simulateNextStep();
+            g.print();
+            Thread.sleep(1500);
+        }
+
 
     }
 }
