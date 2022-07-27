@@ -3,6 +3,8 @@ package trainingCode;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        GameField g = new GameField();
+        g.print();
+
     }
 }
